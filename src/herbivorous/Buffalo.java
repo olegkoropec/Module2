@@ -26,7 +26,7 @@ public class Buffalo extends Herbivorous {
         plant.setAlive(false);
     }
 
-    protected Buffalo reproduction(Buffalo bear) {
+    protected Buffalo reproduction(Buffalo buffalo) {
         Buffalo bornAnimal = new Buffalo();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

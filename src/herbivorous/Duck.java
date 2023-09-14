@@ -36,7 +36,7 @@ public class Duck extends Herbivorous {
         organisms.setAlive(false);
     }
 
-    protected Duck reproduction(Duck bear) {
+    protected Duck reproduction(Duck duck) {
         Duck bornAnimal = new Duck();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

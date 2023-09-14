@@ -4,6 +4,7 @@ import main_classes.Cell;
 import main_classes.Herbivorous;
 import main_classes.Organisms;
 import main_classes.Plant;
+
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -35,10 +36,9 @@ public class Boar extends Herbivorous {
         organisms.setAlive(false);
     }
 
-    protected Boar reproduction(Boar bear) {
+    protected Boar reproduction(Boar boar) {
         Boar bornAnimal = new Boar();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;
     }
-
 }

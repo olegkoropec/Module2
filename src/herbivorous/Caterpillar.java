@@ -26,7 +26,7 @@ public class Caterpillar extends Herbivorous {
         plant.setAlive(false);
     }
 
-    protected Caterpillar reproduction(Caterpillar bear) {
+    protected Caterpillar reproduction(Caterpillar caterpillar) {
         Caterpillar bornAnimal = new Caterpillar();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

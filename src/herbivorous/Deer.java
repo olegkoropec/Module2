@@ -26,7 +26,7 @@ public class Deer extends Herbivorous {
         plant.setAlive(false);
     }
 
-    protected Deer reproduction(Deer bear) {
+    protected Deer reproduction(Deer deer) {
         Deer bornAnimal = new Deer();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

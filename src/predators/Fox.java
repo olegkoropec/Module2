@@ -37,7 +37,7 @@ public class Fox extends Predator {
         animal.setAlive(false);
     }
 
-    protected Fox reproduction(Fox bear) {
+    protected Fox reproduction(Fox fox) {
         Fox bornAnimal = new Fox();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

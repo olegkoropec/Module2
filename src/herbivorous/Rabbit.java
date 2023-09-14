@@ -26,7 +26,7 @@ public class Rabbit extends Herbivorous {
         plant.setAlive(false);
     }
 
-    protected Rabbit reproduction(Rabbit bear) {
+    protected Rabbit reproduction(Rabbit rabbit) {
         Rabbit bornAnimal = new Rabbit();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

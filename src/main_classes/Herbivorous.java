@@ -17,15 +17,19 @@ public class Herbivorous extends Animal {
         int x = this.cell.getX();
         int y = this.cell.getY();
         for (int i = 0; i < move; i++) {
-            int coordinatesXOrY = random.nextInt(2);
-            int plusOrMinus = random.nextInt(2);
-            if (coordinatesXOrY == 0 && plusOrMinus == 0)
+            Integer coordinatesXOrY = random.nextInt(2);
+            boolean coordinateX = coordinatesXOrY.equals(0);
+            boolean coordinateY = coordinatesXOrY.equals(1);
+            Integer plusOrMinus = random.nextInt(2);
+            boolean plus = plusOrMinus.equals(0);
+            boolean minus = plusOrMinus.equals(1);
+            if (coordinateX && plus)
                 x ++;
-            else if (coordinatesXOrY == 0 && plusOrMinus == 1 && x > 0)
+            else if (coordinateX && minus && x > 0)
                 x --;
-            else if (coordinatesXOrY == 1 && plusOrMinus == 0)
+            else if (coordinateY && plus)
                 y ++;
-            else if (coordinatesXOrY == 1 && plusOrMinus == 1 && y > 0)
+            else if (coordinateY && minus && y > 0)
                 y --;
         }
         this.cell.setX(x);

@@ -36,7 +36,7 @@ public class Mouse extends Herbivorous {
         organisms.setAlive(false);
     }
 
-    protected Mouse reproduction(Mouse bear) {
+    protected Mouse reproduction(Mouse mouse) {
         Mouse bornAnimal = new Mouse();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

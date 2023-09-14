@@ -7,8 +7,6 @@ public class Field {
     private final int width;
     private final int length;
     private final String water = "\uD83C\uDF0A";
-//    private final String sand = "\uD83C\uDFDC️";
-//    private final String mountain = "⛰️";
     private final String meadow = "\uD83D\uDFE9";
 
     public int getWidth() {
@@ -30,13 +28,12 @@ public class Field {
         Field field = new Field(scanner.nextInt(), scanner.nextInt());
         ThreadLocalRandom random = ThreadLocalRandom.current();
 
-        for (int i = 0; i < field.getWidth(); i ++){
-            for (int j = 0; j < field.getLength(); j ++){
+        for (int i = 0; i < field.getWidth(); i++) {
+            for (int j = 0; j < field.getLength(); j++) {
                 int randomPicture = random.nextInt(4);
-                switch (randomPicture){
-                    case 0, 2, 3 -> System.out.print(field.meadow);
-                    case 1 -> System.out.print(field.water);
-                };
+                if (randomPicture == 0 || randomPicture == 1 || randomPicture == 2)
+                    System.out.print(field.meadow);
+                else System.out.print(field.water);
             }
             System.out.println();
         }

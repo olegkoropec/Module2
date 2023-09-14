@@ -26,7 +26,7 @@ public class Horse extends Herbivorous {
         plant.setAlive(false);
     }
 
-    protected Horse reproduction(Horse bear) {
+    protected Horse reproduction(Horse horse) {
         Horse bornAnimal = new Horse();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

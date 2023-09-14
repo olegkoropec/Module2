@@ -37,7 +37,7 @@ public class Boa extends Predator {
         animal.setAlive(false);
     }
 
-    protected Boa reproduction(Boa bear) {
+    protected Boa reproduction(Boa boa) {
         Boa bornAnimal = new Boa();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

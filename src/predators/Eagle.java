@@ -37,7 +37,7 @@ public class Eagle extends Predator {
         animal.setAlive(false);
     }
 
-    protected Eagle reproduction(Eagle bear) {
+    protected Eagle reproduction(Eagle eagle) {
         Eagle bornAnimal = new Eagle();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

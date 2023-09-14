@@ -26,7 +26,7 @@ public class Goat extends Herbivorous {
         plant.setAlive(false);
     }
 
-    protected Goat reproduction(Goat bear) {
+    protected Goat reproduction(Goat goat) {
         Goat bornAnimal = new Goat();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;

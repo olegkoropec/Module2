@@ -38,7 +38,7 @@ public class Wolf extends Predator {
         animal.setAlive(false);
     }
 
-    protected Wolf reproduction(Wolf bear) {
+    protected Wolf reproduction(Wolf wolf) {
         Wolf bornAnimal = new Wolf();
         bornAnimal.setCell(this.getCell());
         return bornAnimal;
