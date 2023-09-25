@@ -1,12 +1,13 @@
 package herbivorous;
 
-import draw_field.Cell;
-import all_creatures.Organisms;
+import main_classes.Cell;
+import main_classes.Organisms;
+import main_classes.Herbivorous;
 
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Mouse extends ParentForAllHerbivorous {
+public class Mouse extends Herbivorous {
     Map<Class<? extends Organisms>, Integer> mayBeEaten = Map.of(Caterpillar.class, 90, Plant.class, 100);
 
     public Mouse() {

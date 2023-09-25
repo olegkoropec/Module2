@@ -1,6 +1,6 @@
 package herbivorous;
 
-import all_creatures.Organisms;
+import main_classes.Organisms;
 
 public class Plant extends Organisms {
     public Plant() {

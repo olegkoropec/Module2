@@ -1,8 +1,9 @@
 package herbivorous;
 
-import draw_field.Cell;
+import main_classes.Cell;
+import main_classes.Herbivorous;
 
-public class Horse extends ParentForAllHerbivorous {
+public class Horse extends Herbivorous {
     public Horse() {
         setName("horse");
         setIconUnicode("\uD83D\uDC0E");

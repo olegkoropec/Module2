@@ -1,4 +1,4 @@
-package draw_field;
+package main_classes;
 
 import java.util.concurrent.ThreadLocalRandom;
 

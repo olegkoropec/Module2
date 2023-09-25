@@ -1,11 +1,8 @@
-package predators;
-
-import all_creatures.Animal;
-import draw_field.Cell;
+package main_classes;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class ParentForAllPredator extends Animal {
+public class Herbivorous extends Animal {
     private Cell cell;
     ThreadLocalRandom random = ThreadLocalRandom.current();
 

@@ -1,8 +1,9 @@
 package herbivorous;
 
-import draw_field.Cell;
+import main_classes.Cell;
+import main_classes.Herbivorous;
 
-public class Sheep extends ParentForAllHerbivorous {
+public class Sheep extends Herbivorous {
 
     public Sheep() {
         setName("sheep");

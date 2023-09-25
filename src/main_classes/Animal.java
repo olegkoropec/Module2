@@ -1,4 +1,4 @@
-package all_creatures;
+package main_classes;
 
 public class Animal extends Organisms {
     private int speedCellsMovement;
