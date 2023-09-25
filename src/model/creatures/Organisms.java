@@ -1,4 +1,4 @@
-package main_classes;
+package model.creatures;
 
 public class Organisms {
     private String name;

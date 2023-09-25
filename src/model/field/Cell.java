@@ -1,4 +1,4 @@
-package main_classes;
+package model.field;
 
 import java.util.concurrent.ThreadLocalRandom;
 

@@ -1,10 +1,9 @@
 package herbivorous;
 
-import main_classes.Cell;
-import main_classes.Herbivorous;
-import main_classes.Plant;
+import model.field.Cell;
+import model.creatures.Plant;
 
-public class Sheep extends Herbivorous {
+public class Sheep extends VegetarianAncestor {
 
     public Sheep() {
         setName("sheep");

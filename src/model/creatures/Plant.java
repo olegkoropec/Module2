@@ -1,4 +1,4 @@
-package main_classes;
+package model.creatures;
 
 public class Plant extends Organisms {
     public Plant() {

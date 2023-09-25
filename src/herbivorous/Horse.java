@@ -1,10 +1,9 @@
 package herbivorous;
 
-import main_classes.Cell;
-import main_classes.Herbivorous;
-import main_classes.Plant;
+import model.field.Cell;
+import model.creatures.Plant;
 
-public class Horse extends Herbivorous {
+public class Horse extends VegetarianAncestor {
     public Horse() {
         setName("horse");
         setIconUnicode("\uD83D\uDC0E");

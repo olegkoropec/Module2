@@ -1,14 +1,13 @@
 package predators;
 
 import herbivorous.*;
-import main_classes.Animal;
-import main_classes.Cell;
-import main_classes.Predator;
+import model.creatures.Animal;
+import model.field.Cell;
 
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Eagle extends Predator {
+public class Eagle extends PredatorAncestor {
     Map<Class<? extends Animal>, Integer> animalMayBeEaten = Map.of(Rabbit.class, 90, Mouse.class, 90,
             Duck.class, 80, Fox.class, 10);
 

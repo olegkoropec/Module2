@@ -1,10 +1,9 @@
 package herbivorous;
 
-import main_classes.Cell;
-import main_classes.Herbivorous;
-import main_classes.Plant;
+import model.field.Cell;
+import model.creatures.Plant;
 
-public class Buffalo extends Herbivorous {
+public class Buffalo extends VegetarianAncestor {
     public Buffalo() {
         setName("buffalo");
         setIconUnicode("\uD83D\uDC03");

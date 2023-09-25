@@ -1,4 +1,4 @@
-package main_classes;
+package model.creatures;
 
 public class Animal extends Organisms {
     private int speedCellsMovement;

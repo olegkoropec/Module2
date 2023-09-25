@@ -1,8 +1,11 @@
-package main_classes;
+package predators;
+
+import model.creatures.Animal;
+import model.field.Cell;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Herbivorous extends Animal {
+public class PredatorAncestor extends Animal {
     private Cell cell;
     ThreadLocalRandom random = ThreadLocalRandom.current();
 
